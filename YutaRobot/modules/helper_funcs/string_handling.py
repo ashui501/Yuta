@@ -8,7 +8,7 @@ import emoji
 
 from telegram import MessageEntity
 from telegram.utils.helpers import escape_markdown
-from GabiBraunRobot import updater
+from YutaRobot import updater
 
 # NOTE: the url \ escape may cause double escapes
 # match * (bold) (don't escape if in url)
