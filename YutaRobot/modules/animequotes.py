@@ -6,11 +6,11 @@ from telegram import ParseMode, Update, ChatPermissions
 from telegram.ext import CallbackContext
 from telegram.error import BadRequest
 
-import GabiBraunRobot.modules.animequotes_strings as animequotes_strings
-from GabiBraunRobot import dispatcher
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
-from GabiBraunRobot.modules.helper_funcs.chat_status import (is_user_admin)
-from GabiBraunRobot.modules.helper_funcs.extraction import extract_user
+import YutaRobot.modules.animequotes_strings as animequotes_strings
+from YutaRobot import dispatcher
+from YutaRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot.modules.helper_funcs.chat_status import (is_user_admin)
+from YutaRobot.modules.helper_funcs.extraction import extract_user
 
 def animequotes(update: Update, context: CallbackContext):
     message = update.effective_message
