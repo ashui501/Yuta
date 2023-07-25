@@ -14,9 +14,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import GabiBraunRobot.modules.sql.global_bans_sql as sql
-from GabiBraunRobot.modules.sql.users_sql import get_user_com_chats
-from GabiBraunRobot import (
+import YutaRobot.modules.sql.global_bans_sql as sql
+from YutaRobot.modules.sql.users_sql import get_user_com_chats
+from YutaRobot import (
     DEV_USERS,
     EVENT_LOGS,
     OWNER_ID,
@@ -30,16 +30,16 @@ from GabiBraunRobot import (
     sw,
     dispatcher,
 )
-from GabiBraunRobot.modules.helper_funcs.chat_status import (
+from YutaRobot.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from GabiBraunRobot.modules.helper_funcs.extraction import (
+from YutaRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from GabiBraunRobot.modules.helper_funcs.misc import send_to_list
+from YutaRobot.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 
