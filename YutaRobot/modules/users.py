@@ -10,11 +10,11 @@ from telegram.ext import (
     MessageHandler,
 )
 
-import GabiBraunRobot.modules.sql.users_sql as sql
-from GabiBraunRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from GabiBraunRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from GabiBraunRobot.modules.sql.users_sql import get_all_users
-from GabiBraunRobot.modules.helper_funcs.string_handling import button_markdown_parser
+import YutaRobot.modules.sql.users_sql as sql
+from YutaRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from YutaRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from YutaRobot.modules.sql.users_sql import get_all_users
+from YutaRobot.modules.helper_funcs.string_handling import button_markdown_parser
 
 USERS_GROUP = 4
 CHAT_GROUP = 5
