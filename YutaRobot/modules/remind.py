@@ -4,16 +4,16 @@ import io
 import re
 import time
 
-from GabiBraunRobot import DRAGONS, REMINDER_LIMIT, dispatcher
-from GabiBraunRobot.modules.connection import connected
-from GabiBraunRobot.modules.helper_funcs.chat_status import user_admin
-from GabiBraunRobot.modules.helper_funcs.extraction import extract_text
-from GabiBraunRobot.modules.helper_funcs.string_handling import (
+from YutaRobot import DRAGONS, REMINDER_LIMIT, dispatcher
+from YutaRobot.modules.connection import connected
+from YutaRobot.modules.helper_funcs.chat_status import user_admin
+from YutaRobot.modules.helper_funcs.extraction import extract_text
+from YutaRobot.modules.helper_funcs.string_handling import (
     extract_time_seconds, markdown_to_html,
 )
-from GabiBraunRobot.modules.log_channel import loggable
-from GabiBraunRobot.modules.ping import get_readable_time
-from GabiBraunRobot.modules.sql import remind_sql as sql
+from YutaRobot.modules.log_channel import loggable
+from YutaRobot.modules.ping import get_readable_time
+from YutaRobot.modules.sql import remind_sql as sql
 from telegram import (
     InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
     Update,
