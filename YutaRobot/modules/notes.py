@@ -3,14 +3,14 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import GabiBraunRobot.modules.sql.notes_sql as sql
-from GabiBraunRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
-from GabiBraunRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from GabiBraunRobot.modules.helper_funcs.chat_status import user_admin, connection_status
-from GabiBraunRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from GabiBraunRobot.modules.helper_funcs.msg_types import get_note_type
-from GabiBraunRobot.modules.helper_funcs.string_handling import (
+import YutaRobot.modules.sql.notes_sql as sql
+from YutaRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from YutaRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from YutaRobot.modules.helper_funcs.chat_status import user_admin, connection_status
+from YutaRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from YutaRobot.modules.helper_funcs.msg_types import get_note_type
+from YutaRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (
