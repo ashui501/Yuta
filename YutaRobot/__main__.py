@@ -51,58 +51,52 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-START_TEX = """𝙃𝙚𝙡𝙡𝙤 {}, 𝙬𝙖𝙞𝙩 𝙖 𝙢𝙞𝙣 𝙗𝙧𝙤..."""
+START_TEX = """𝖧𝖾𝗅𝗅𝗈 {}, 𝗐𝖺𝗂𝗍 𝖺 𝗆𝗂𝗇 𝖻𝗋𝗈..."""
 
 PM_START_TEXT = """
-➽ Konnichiwa dear 
-─★──★───★───★───★────★─
-I am an Anime themed group 
-management bot with extra helpful features
-Myself MAKISE KURISU! 
-★━━━━━━━━━━━━━━━━━━━━★
-➛ Try The Help Buttons Below To Know My Abilities ××
+𝖧𝖾𝗒 {},
+𝖬𝗒𝗌𝖾𝗅𝖿 *𝖸𝗎𝗎𝗍𝖺*, 𝖠𝗇 𝖠𝖽𝗏𝖺𝗇𝖼𝖾 𝖬𝖺𝗇𝖺𝗀𝖾𝗆𝖾𝗇𝗍 𝖡𝗈𝗍 𝖡𝗎𝗂𝗅𝗍 𝗍𝗈 𝖬𝖺𝗇𝖺𝗀𝖾 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉𝗌[.](https://te.legra.ph/file/ffc76109857e9780a8faf.jpg)
+───────────────────────
+**𝖧𝗂𝗍 𝗍𝗁𝖾 𝗁𝖾𝗅𝗉 𝖻𝗎𝗍𝗍𝗈𝗇 𝗍𝗈 𝖿𝗂𝗇𝖽 𝗈𝗎𝗍 𝗆𝗈𝗋𝖾 𝖺𝖻𝗈𝗎𝗍 𝗁𝗈𝗐 𝗍𝗈 𝗎𝗌𝖾 𝗆𝖾 𝗍𝗈 𝗆𝗒 𝖿𝗎𝗅𝗅 𝗉𝗈𝗍𝖾𝗇𝗍𝗂𝖺𝗅.**
 """
 
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="𝘼𝘿𝘿 𝙈𝙀 𝙏𝙊 𝙔𝙊𝙐𝙍 𝙂𝙍𝙊𝙐𝙋",url="t.me/Makise_KurisuRobot?startgroup=true"),
+            text="➕ sᴜᴍᴍᴏɴ ᴍᴇ ➕",url="t.me/Yuta_ProXbot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
-            text="𝘿𝙊𝙉𝘼𝙏𝙀", callback_data="donate_"),
+            text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍 ∘",url="t.me/ankakaaka"),
         InlineKeyboardButton(
-            text="𝘼𝘽𝙊𝙐𝙏", callback_data="_gabi"),              
+            text="𝖠𝖻𝗈𝗎𝗍 ∘", callback_data="_yuta"),              
     ],   
     [                    
         InlineKeyboardButton(
-            text="🔐𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎", callback_data="help_back"
+            text="❓ 𝖧𝖾𝗅𝗉 & 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌❓ ", callback_data="help_back"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-*Main* commands available:
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
- • /settings:
- • in PM: will send you your settings for all supported modules.
- • in a group: will redirect you to pm, with all that chat's settings.
-{}
-And the following:
+ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅs ᴀᴠᴀɪʟᴀʙʟᴇ:
+➛ /𝗁𝖾𝗅𝗉: 𝖯𝖬'𝗌 𝗒𝗈𝗎 𝗍𝗁𝗂𝗌 𝗆𝖾𝗌𝗌𝖺𝗀𝖾.
+➛ /𝗁𝖾𝗅𝗉 <𝗆𝗈𝖽𝗎𝗅𝖾 𝗇𝖺𝗆𝖾>: 𝖯𝖬'𝗌 𝗒𝗈𝗎 𝗂𝗇𝖿𝗈 𝖺𝖻𝗈𝗎𝗍 𝗍𝗁𝖺𝗍 𝗆𝗈𝖽𝗎𝗅𝖾.
+➛ /𝖽𝗈𝗇𝖺𝗍𝖾: 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇 𝗈𝗇 𝗁𝗈𝗐 𝗍𝗈 𝖽𝗈𝗇𝖺𝗍𝖾!
+➛ /𝗌𝖾𝗍𝗍𝗂𝗇𝗀𝗌:
+➛ 𝗂𝗇 𝖯𝖬: 𝗐𝗂𝗅𝗅 𝗌𝖾𝗇𝖽 𝗒𝗈𝗎 𝗒𝗈𝗎𝗋 𝗌𝖾𝗍𝗍𝗂𝗇𝗀𝗌 𝖿𝗈𝗋 𝖺𝗅𝗅 𝗌𝗎𝗉𝗉𝗈𝗋𝗍𝖾𝖽 𝗌𝗈𝗎𝗋𝖼𝖾.
+➛ 𝗂𝗇 𝖺 𝗀𝗋𝗈𝗎𝗉: 𝗐𝗂𝗅𝗅 𝗋𝖾𝖽𝗂𝗋𝖾𝖼𝗍 𝗒𝗈𝗎 𝗍𝗈 𝗉𝗆, 𝗐𝗂𝗍𝗁 𝖺𝗅𝗅 𝗍𝗁𝖺𝗍 𝖼𝗁𝖺𝗍'𝗌 𝗌𝖾𝗍𝗍𝗂𝗇𝗀𝗌
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "All commands can either be used with / or !.",
 )
 
-GABIIMGSTART = "https://telegra.ph/file/fd1d3740e3967ebf17678.jpg"
+GABIIMGSTART = "https://te.legra.ph/file/ffc76109857e9780a8faf.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paytm](#) or by contacting @DushmanXRonin
+ You can support the project via [Paytm](#) or by contacting Anonymous
  Supporting isnt always financial!
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -204,20 +198,17 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
 
-            x=update.effective_message.reply_sticker(
-                "CAACAgEAAxkBAAIfKmS87JDaeATP2Jmk1Df7PM7E6qWPAAI0AAPaJDkpMc7VuF1Ovg4vBA")
-            x.delete()
             usr = update.effective_user
             lol = update.effective_message.reply_text(
                 START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
             
             time.sleep(0.1)
-            lol.edit_text("❤️")
+            lol.edit_text("💥")
             time.sleep(0.5)
-            lol.edit_text("✨")
+            lol.edit_text("⚡")
             time.sleep(0.5)
-            lol.edit_text("𝗦𝗧𝗔𝗥𝗧𝗜𝗡𝗚...")
+            lol.edit_text("Starting...")
             time.sleep(0.2)
             lol.delete()
             
