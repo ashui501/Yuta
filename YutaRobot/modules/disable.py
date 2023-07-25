@@ -2,9 +2,9 @@ import importlib
 from typing import Union
 
 from future.utils import string_types
-from GabiBraunRobot import dispatcher
-from GabiBraunRobot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
-from GabiBraunRobot.modules.helper_funcs.misc import is_module_loaded
+from YutaRobot import dispatcher
+from YutaRobot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
+from YutaRobot.modules.helper_funcs.misc import is_module_loaded
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
