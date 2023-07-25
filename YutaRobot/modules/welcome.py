@@ -7,9 +7,9 @@ from PIL import Image, ImageChops, ImageDraw, ImageFont
 import textwrap
 from pyrogram import filters, Client
 from pyrogram.types import ChatMemberUpdated
-from GabiBraunRobot import pbot as app
-from GabiBraunRobot.utils.errors import capture_err, asyncify
-from GabiBraunRobot.utils.utils import temp
+from YutaRobot import pbot as app
+from YutaRobot.utils.errors import capture_err, asyncify
+from YutaRobot.utils.utils import temp
 
 LOGGER = getLogger(__name__)
 
