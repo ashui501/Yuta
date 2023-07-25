@@ -724,7 +724,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings, run_async=True)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_", run_async=True)
 
-    gabi_callback_handler = CallbackQueryHandler(yuta_about_callback, pattern=r"_yuta", run_async=True)
+    yuta_callback_handler = CallbackQueryHandler(yuta_about_callback, pattern=r"_yuta", run_async=True)
     donate_callback_handler = CallbackQueryHandler(donate_callback, pattern=r"donate_", run_async=True)
 
     donate_handler = CommandHandler("donate", donate, run_async=True)
