@@ -4,15 +4,15 @@ import re
 
 from telegram import Message, Chat, Update, User, ChatPermissions
 
-from GabiBraunRobot import TIGERS, WOLVES, dispatcher
-from GabiBraunRobot.modules.helper_funcs.chat_status import (
+from YutaRobot import TIGERS, WOLVES, dispatcher
+from YutaRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from GabiBraunRobot.modules.log_channel import loggable
-from GabiBraunRobot.modules.sql import antiflood_sql as sql
+from YutaRobot.modules.log_channel import loggable
+from YutaRobot.modules.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import (
     CallbackContext,
