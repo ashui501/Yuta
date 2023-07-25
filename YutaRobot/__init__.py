@@ -11,7 +11,7 @@ from pyrogram import Client, errors
 from telethon import TelegramClient
 from aiohttp import ClientSession
 from Python_ARQ import ARQ
-from GabiBraunRobot.utils.quoteapi import Quotly
+from YutaRobot.utils.quoteapi import Quotly
 from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid, ChannelInvalid
 
 StartTime = time.time()
@@ -263,8 +263,8 @@ async def eor(msg: Message, **kwargs):
     return await func(**{k: v for k, v in kwargs.items() if k in spec})
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("gabi", API_ID, API_HASH)
-pbot = Client("gabipbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+telethn = TelegramClient("yuta", API_ID, API_HASH)
+pbot = Client("yutapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 print("[INFO]: INITIALIZING AIOHTTP SESSION")
 aiohttpsession = ClientSession()
 # ARQ Client
@@ -278,10 +278,10 @@ DEV_USERS = list(DEV_USERS)
 WOLVES = list(WOLVES)
 DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
-ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "GabiBraunRobot/elevated_users.json")
+ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "YutaRobot/elevated_users.json")
 
 # Load at end to ensure all prev variables have been set
-from GabiBraunRobot.modules.helper_funcs.handlers import (
+from YutaRobot.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
