@@ -1,8 +1,8 @@
 import os
-from GabiBraunRobot import telethn as tbot
+from YutaRobot import telethn as tbot
 from geopy.geocoders import Nominatim
-from GabiBraunRobot.events import register
-from GabiBraunRobot import *
+from YutaRobot.events import register
+from YutaRobot import *
 from telethon import *
 from telethon.tl import *
 
