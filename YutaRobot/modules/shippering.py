@@ -3,8 +3,8 @@ from datetime import datetime
 
 from pyrogram import filters
 
-from GabiBraunRobot import pbot as pgram
-from GabiBraunRobot.karma_mongo import get_couple, save_couple
+from YutaRobot import pbot as pgram
+from YutaRobot.karma_mongo import get_couple, save_couple
 
 
 def dt():
