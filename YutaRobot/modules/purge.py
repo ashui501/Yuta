@@ -3,17 +3,17 @@ from telethon import events
 from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler, Filters
 
-from GabiBraunRobot import telethn, dispatcher
-from GabiBraunRobot.modules.helper_funcs.chat_status import (
+from YutaRobot import telethn, dispatcher
+from YutaRobot.modules.helper_funcs.chat_status import (
     can_delete,
     user_admin,
 )
-from GabiBraunRobot.modules.helper_funcs.telethn.chatstatus import (
+from YutaRobot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
 
-import GabiBraunRobot.modules.sql.purges_sql as sql
+import YutaRobot.modules.sql.purges_sql as sql
 
 async def purge_messages(event):
     start = time.perf_counter()
