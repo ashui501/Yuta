@@ -2,7 +2,7 @@ import html
 import json
 from typing import Optional
 
-from GabiBraunRobot import (
+from YutaRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -13,14 +13,14 @@ from GabiBraunRobot import (
     dispatcher,
     ELEVATED_USERS_FILE,
 )
-from GabiBraunRobot.modules.helper_funcs.chat_status import (
+from YutaRobot.modules.helper_funcs.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,
 )
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
-from GabiBraunRobot.modules.helper_funcs.extraction import extract_user
-from GabiBraunRobot.modules.log_channel import gloggable
+from YutaRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot.modules.helper_funcs.extraction import extract_user
+from YutaRobot.modules.log_channel import gloggable
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.utils.helpers import mention_html
