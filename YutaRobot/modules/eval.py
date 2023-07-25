@@ -6,8 +6,8 @@ import textwrap
 import traceback
 from contextlib import redirect_stdout
 
-from GabiBraunRobot import LOGGER, dispatcher
-from GabiBraunRobot.modules.helper_funcs.chat_status import dev_plus
+from YutaRobot import LOGGER, dispatcher
+from YutaRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 
