@@ -1,7 +1,7 @@
 # Module to blacklist users and prevent them from using commands by @TheRealPhoenix
 import html
-import GabiBraunRobot.modules.sql.blacklistusers_sql as sql
-from GabiBraunRobot import (
+import YutaRobot.modules.sql.blacklistusers_sql as sql
+from YutaRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -10,12 +10,12 @@ from GabiBraunRobot import (
     WOLVES,
     dispatcher,
 )
-from GabiBraunRobot.modules.helper_funcs.chat_status import dev_plus
-from GabiBraunRobot.modules.helper_funcs.extraction import (
+from YutaRobot.modules.helper_funcs.chat_status import dev_plus
+from YutaRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from GabiBraunRobot.modules.log_channel import gloggable
+from YutaRobot.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler
