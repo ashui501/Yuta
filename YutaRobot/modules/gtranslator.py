@@ -3,8 +3,8 @@ from telegram.ext import CallbackContext
 
 from gpytranslate import SyncTranslator
 
-from GabiBraunRobot import dispatcher
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot import dispatcher
+from YutaRobot.modules.disable import DisableAbleCommandHandler
 
 
 trans = SyncTranslator()
