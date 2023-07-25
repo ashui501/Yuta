@@ -12,7 +12,7 @@ from telegram.ext import CallbackContext, CommandHandler
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from GabiBraunRobot import (
+from YutaRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -23,15 +23,15 @@ from GabiBraunRobot import (
     dispatcher,
     sw,
 )
-from GabiBraunRobot.__main__ import STATS, TOKEN, USER_INFO
-import GabiBraunRobot.modules.sql.userinfo_sql as sql
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
-from GabiBraunRobot.modules.sql.global_bans_sql import is_user_gbanned
-from GabiBraunRobot.modules.sql.afk_redis import is_user_afk, afk_reason
-from GabiBraunRobot.modules.sql.users_sql import get_user_num_chats
-from GabiBraunRobot.modules.helper_funcs.chat_status import sudo_plus
-from GabiBraunRobot.modules.helper_funcs.extraction import extract_user
-from GabiBraunRobot import telethn as SaitamaTelethonClient
+from YutaRobot.__main__ import STATS, TOKEN, USER_INFO
+import YutaRobot.modules.sql.userinfo_sql as sql
+from YutaRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot.modules.sql.global_bans_sql import is_user_gbanned
+from YutaRobot.modules.sql.afk_redis import is_user_afk, afk_reason
+from YutaRobot.modules.sql.users_sql import get_user_num_chats
+from YutaRobot.modules.helper_funcs.chat_status import sudo_plus
+from YutaRobot.modules.helper_funcs.extraction import extract_user
+from YutaRobot import telethn as SaitamaTelethonClient
 
 
 def no_by_per(totalhp, percentage):
