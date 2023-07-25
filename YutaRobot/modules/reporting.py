@@ -1,14 +1,14 @@
 import html
 import re
 from typing import Optional
-from GabiBraunRobot import DRAGONS, LOGGER, TIGERS, WOLVES, dispatcher
-from GabiBraunRobot.modules.helper_funcs.chat_status import (
+from YutaRobot import DRAGONS, LOGGER, TIGERS, WOLVES, dispatcher
+from YutaRobot.modules.helper_funcs.chat_status import (
     user_admin,
     user_not_admin,
 )
-from GabiBraunRobot.modules.log_channel import loggable
-from GabiBraunRobot.modules.sql import reporting_sql as sql
-from GabiBraunRobot.modules.helper_funcs.chat_status import (
+from YutaRobot.modules.log_channel import loggable
+from YutaRobot.modules.sql import reporting_sql as sql
+from YutaRobot.modules.helper_funcs.chat_status import (
     user_admin,
     is_user_admin,
 )
