@@ -1,6 +1,6 @@
-import GabiBraunRobot.modules.sql.blacklistusers_sql as sql
-from GabiBraunRobot import ALLOW_EXCL
-from GabiBraunRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
+import YutaRobot.modules.sql.blacklistusers_sql as sql
+from YutaRobot import ALLOW_EXCL
+from YutaRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
 
 from telegram import Update
 from telegram.ext import CommandHandler, MessageHandler, RegexHandler, Filters
