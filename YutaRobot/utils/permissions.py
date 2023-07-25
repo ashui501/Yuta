@@ -4,8 +4,8 @@ from traceback import format_exc as err
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 from pyrogram.types import Message
 
-from GabiBraunRobot import DRAGONS
-from GabiBraunRobot.modules.admin import member_permissions
+from YutaRobot import DRAGONS
+from YutaRobot.modules.admin import member_permissions
 
 
 async def authorised(func, subFunc2, client, message, *args, **kwargs):
