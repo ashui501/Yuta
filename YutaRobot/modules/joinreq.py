@@ -17,9 +17,9 @@ from functools import wraps
 
 
 #NAME - YOUR BOTS NAME (EG. from Raiden import dispatcher)
-from GabiBraunRobot import dispatcher, DEV_USERS
-from GabiBraunRobot.modules.helper_funcs.chat_status import bot_admin
-from GabiBraunRobot.modules.log_channel import loggable
+from YutaRobot import dispatcher, DEV_USERS
+from YutaRobot.modules.helper_funcs.chat_status import bot_admin
+from YutaRobot.modules.log_channel import loggable
 
 
 
