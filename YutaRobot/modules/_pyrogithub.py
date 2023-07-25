@@ -1,8 +1,8 @@
 # © @Mr_Dark_Prince
 import aiohttp
 from pyrogram import filters
-from GabiBraunRobot import pbot
-from GabiBraunRobot.utils.errors import capture_err
+from YutaRobot import pbot
+from YutaRobot.utils.errors import capture_err
 
 
 __mod_name__ = "Github"
