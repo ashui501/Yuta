@@ -1,7 +1,7 @@
 from pyrogram import filters
 
-from GabiBraunRobot import pbot as app, arq
-from GabiBraunRobot.utils.errors import capture_err
+from YutaRobot import pbot as app, arq
+from YutaRobot.utils.errors import capture_err
 
 __mod_name__ = "Reddit"
 
