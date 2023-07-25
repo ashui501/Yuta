@@ -1,11 +1,11 @@
 import html
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
-from GabiBraunRobot import dispatcher, DRAGONS
-from GabiBraunRobot.modules.helper_funcs.extraction import extract_user
+from YutaRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot import dispatcher, DRAGONS
+from YutaRobot.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, CallbackQueryHandler
-import GabiBraunRobot.modules.sql.approve_sql as sql
-from GabiBraunRobot.modules.helper_funcs.chat_status import user_admin
-from GabiBraunRobot.modules.log_channel import loggable
+import YutaRobot.modules.sql.approve_sql as sql
+from YutaRobot.modules.helper_funcs.chat_status import user_admin
+from YutaRobot.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest
