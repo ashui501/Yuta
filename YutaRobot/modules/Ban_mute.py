@@ -14,10 +14,10 @@ from telegram.utils.helpers import mention_html
 from typing import Optional, List
 from telegram import TelegramError
 
-import GabiBraunRobot.modules.sql.users_sql as sql
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
-from GabiBraunRobot.modules.helper_funcs.filters import CustomFilters
-from GabiBraunRobot import (
+import YutaRobot.modules.sql.users_sql as sql
+from YutaRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot.modules.helper_funcs.filters import CustomFilters
+from YutaRobot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -27,7 +27,7 @@ from GabiBraunRobot import (
     WOLVES,
     dispatcher,
 )
-from GabiBraunRobot.modules.helper_funcs.chat_status import (
+from YutaRobot.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     bot_admin,
     can_restrict,
@@ -40,9 +40,9 @@ from GabiBraunRobot.modules.helper_funcs.chat_status import (
     can_delete,
     dev_plus,
 )
-from GabiBraunRobot.modules.helper_funcs.extraction import extract_user_and_text
-from GabiBraunRobot.modules.helper_funcs.string_handling import extract_time
-from GabiBraunRobot.modules.log_channel import gloggable, loggable
+from YutaRobot.modules.helper_funcs.extraction import extract_user_and_text
+from YutaRobot.modules.helper_funcs.string_handling import extract_time
+from YutaRobot.modules.log_channel import gloggable, loggable
 
 
 
