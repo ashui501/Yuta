@@ -1,7 +1,7 @@
 from typing import List, Optional
 
-from GabiBraunRobot import LOGGER
-from GabiBraunRobot.modules.users import get_user_id
+from YutaRobot import LOGGER
+from YutaRobot.modules.users import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 
