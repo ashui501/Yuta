@@ -1,6 +1,6 @@
 import threading
 
-from GabiBraunRobot.modules.sql import BASE, SESSION
+from YutaRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText, distinct, func
 from sqlalchemy.dialects import postgresql
 from sqlalchemy.sql.sqltypes import BigInteger
