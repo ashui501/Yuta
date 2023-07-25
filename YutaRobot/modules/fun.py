@@ -1,12 +1,12 @@
 import html
 import random
 import time
-from GabiBraunRobot.modules.sql.approve_sql import is_approved
-import GabiBraunRobot.modules.fun_strings as fun_strings
-from GabiBraunRobot import dispatcher
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
-from GabiBraunRobot.modules.helper_funcs.chat_status import is_user_admin
-from GabiBraunRobot.modules.helper_funcs.extraction import extract_user
+from YutaRobot.modules.sql.approve_sql import is_approved
+import YutaRobot.modules.fun_strings as fun_strings
+from YutaRobot import dispatcher
+from YutaRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot.modules.helper_funcs.chat_status import is_user_admin
+from YutaRobot.modules.helper_funcs.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext
