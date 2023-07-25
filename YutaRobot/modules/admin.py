@@ -6,11 +6,11 @@ from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler, 
     Filters, run_async, MessageHandler
 from telegram.utils.helpers import mention_html
 
-from GabiBraunRobot import DRAGONS, dispatcher, TOKEN, LOGGER
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
-from GabiBraunRobot.modules.sql import pin_sql
-from GabiBraunRobot.pyrogramee.pluginshelper import member_permissions
-from GabiBraunRobot.modules.helper_funcs.chat_status import (
+from YutaRobot import DRAGONS, dispatcher, TOKEN, LOGGER
+from YutaRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot.modules.sql import pin_sql
+from YutaRobot.pyrogramee.pluginshelper import member_permissions
+from YutaRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_pin,
     can_promote,
@@ -22,13 +22,13 @@ from GabiBraunRobot.modules.helper_funcs.chat_status import (
     bot_can_change_info,
     user_can_change_info,
 )
-from GabiBraunRobot.modules.helper_funcs.admin_perms import can_manage_voice_chats
-from GabiBraunRobot.modules.helper_funcs.extraction import (
+from YutaRobot.modules.helper_funcs.admin_perms import can_manage_voice_chats
+from YutaRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from GabiBraunRobot.modules.log_channel import loggable
-from GabiBraunRobot.modules.helper_funcs.alternate import send_message
+from YutaRobot.modules.log_channel import loggable
+from YutaRobot.modules.helper_funcs.alternate import send_message
 
 
 @connection_status
