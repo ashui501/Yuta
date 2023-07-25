@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
-import GabiBraunRobot.modules.sql.blacklist_sql as sql
-from GabiBraunRobot import dispatcher, LOGGER
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
-from GabiBraunRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from GabiBraunRobot.modules.helper_funcs.extraction import extract_text
-from GabiBraunRobot.modules.helper_funcs.misc import split_message
-from GabiBraunRobot.modules.log_channel import loggable
-from GabiBraunRobot.modules.warns import warn
-from GabiBraunRobot.modules.helper_funcs.string_handling import extract_time
-from GabiBraunRobot.modules.connection import connected
-from GabiBraunRobot.modules.sql.approve_sql import is_approved
-from GabiBraunRobot.modules.helper_funcs.alternate import send_message, typing_action
+import YutaRobot.modules.sql.blacklist_sql as sql
+from YutaRobot import dispatcher, LOGGER
+from YutaRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from YutaRobot.modules.helper_funcs.extraction import extract_text
+from YutaRobot.modules.helper_funcs.misc import split_message
+from YutaRobot.modules.log_channel import loggable
+from YutaRobot.modules.warns import warn
+from YutaRobot.modules.helper_funcs.string_handling import extract_time
+from YutaRobot.modules.connection import connected
+from YutaRobot.modules.sql.approve_sql import is_approved
+from YutaRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 
