@@ -1,5 +1,5 @@
 import requests
-from GabiBraunRobot import TOKEN
+from YutaRobot import TOKEN
 
 
 def can_manage_voice_chats(chat_id, user_id):
