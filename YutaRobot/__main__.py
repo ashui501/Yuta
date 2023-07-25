@@ -205,9 +205,9 @@ def start(update: Update, context: CallbackContext):
             
             time.sleep(0.1)
             lol.edit_text("💥")
-            time.sleep(0.5)
+            time.sleep(0.3)
             lol.edit_text("⚡")
-            time.sleep(0.5)
+            time.sleep(0.3)
             lol.edit_text("Starting...")
             time.sleep(0.2)
             lol.delete()
@@ -221,7 +221,7 @@ def start(update: Update, context: CallbackContext):
             )            
     else:
         update.effective_message.reply_animation(
-            GABIIMGSTART, caption= "<b>Oi Baka, I'm alive!!\nHaven't sleep since</b>: <code>{}</code>".format(
+            GABIIMGSTART, caption= "<b>ayee stoopid, I'm alive!!\nHaven't sleep since</b>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -364,21 +364,23 @@ def yuta_about_callback(update, context):
     query = update.callback_query
     if query.data == "_yuta":
         query.message.edit_text(
-            text=""" ℹ️ I'm *MAKISE*, a powerful group management bot built to help you manage your group easily.\n❍ I can restrict users.\n❍ I can greet users with customizable welcome messages and even set a group's rules.\n❍ I have an advanced anti-flood system.\n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.\n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.\n❍ I check for admins' permissions before executing any command and more stuffs\n❍ Makise licensed under the GNU3 General Public License v3.0!
-\n*×Below you will find the link of the support group and channel.×*
-[SUPPORT](https://t.me/Samurai_botsupport)
-[Channel](https://t.me/samurai_bot_updates)
-[Gban-Logs](https://t.me/Serenity_log)""",
+            text=""" 𝖧𝖾𝗒 𝖨'𝗆 𝖸𝗎𝗎𝗍𝖺, 𝖠 𝗉𝗈𝗐𝖾𝗋𝖿𝗎𝗅 𝗀𝗋𝗈𝗎𝗉 𝗆𝖺𝗇𝖺𝗀𝖾𝗆𝖾𝗇𝗍 𝖻𝗈𝗍 𝖻𝖺𝗌𝖾𝖽 𝗈𝗇 𝗃𝗎𝗃𝗎𝗍𝗌𝗎 𝗄𝖺𝗂𝗌𝖾𝗇 𝖺𝗇𝗂𝗆𝖾.
+𝖨'𝗅𝗅 𝗁𝖾𝗅𝗉 𝗒𝗈𝗎 𝗆𝖺𝗇𝖺𝗀𝖾 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉 𝖺𝗇𝖽 𝗄𝖾𝖾𝗉 𝗂𝗍 𝗌𝖺𝖿𝖾 𝖿𝗋𝗈𝗆 𝗌𝗉𝖺𝗆𝗆𝖾𝗋𝗌 𝖺𝗇𝖽 𝗌𝖼𝖺𝗆𝗆𝖾𝗋𝗌.
+◉ 𝖨 𝗁𝖺𝗏𝖾 𝖺𝗇 𝖺𝖽𝗏𝖺𝗇𝖼𝖾 𝖺𝗇𝗍𝗂-𝖿𝗅𝗈𝗈𝖽 𝗌𝗒𝗌𝗍𝖾𝗆
+◉ 𝖨 𝖼𝖺𝗇 𝗋𝖾𝗌𝗍𝗋𝗂𝖼𝗍 𝗎𝗌𝖾𝗋𝗌
+◉ 𝖨 𝖼𝖺𝗇 𝗐𝖺𝗋𝗇 𝗎𝗌𝖾𝗋𝗌 𝗎𝗇𝗍𝗂𝗅 𝗍𝗁𝖾𝗒 𝗋𝖾𝖺𝖼𝗁 𝗆𝖺𝗑 𝗐𝖺𝗋𝗇𝗌, 𝗐𝗂𝗍𝗁 𝖾𝖺𝖼𝗁 𝗉𝗋𝖾𝖽𝖾𝖿𝗂𝗇𝖾𝖽 𝖺𝖼𝗍𝗂𝗈𝗇𝗌 𝗌𝗎𝖼𝗁 𝖺𝗌 𝖻𝖺𝗇, 𝗆𝗎𝗍𝖾, 𝗄𝗂𝖼𝗄, 𝖾𝗍𝖼.
+◉ 𝖨 𝖼𝖺𝗇 𝗀𝗋𝖾𝖾𝗍 𝗎𝗌𝖾𝗋𝗌 𝗐𝗂𝗍𝗁 𝖼𝗎𝗌𝗍𝗈𝗆𝗂𝗌𝖺𝖻𝗅𝖾 𝗐𝖾𝗅𝖼𝗈𝗆𝖾 𝗆𝖾𝗌𝗌𝖺𝗀𝖾𝗌
+""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="📮Support", url="https://t.me/samurai_botSupport"),                               
-                    InlineKeyboardButton(text="📡Logs", url="t.me/Serenity_Log"),                            
+                    InlineKeyboardButton(text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍 ∘", url="https://t.me/samurai_botSupport"),                               
+                    InlineKeyboardButton(text="𝖴𝗉𝖽𝖺𝗍𝖾𝗌 ∘", url="t.me/Serenity_Log"),                            
                  ],
                  [
-                    InlineKeyboardButton(text="🔙Back", callback_data="donate_back")
+                    InlineKeyboardButton(text="🏠", callback_data="donate_back")
                  ]
                 ]
             ),
