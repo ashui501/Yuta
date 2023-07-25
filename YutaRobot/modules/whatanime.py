@@ -16,7 +16,7 @@ from telethon.tl.types import (
 )
 from telethon.utils import is_image, is_video
 
-from GabiBraunRobot.events import register as gabi
+from YutaRobot.events import register as gabi
 
 @gabi(pattern="^/sauce(.*)")
 @gabi(pattern="^/whatanime(.*)")
