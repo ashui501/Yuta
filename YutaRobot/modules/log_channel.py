@@ -13,9 +13,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue
     from telegram.utils.helpers import escape_markdown
 
-    from GabiBraunRobot import EVENT_LOGS, LOGGER, dispatcher
-    from GabiBraunRobot.modules.helper_funcs.chat_status import user_admin
-    from GabiBraunRobot.modules.sql import log_channel_sql as sql
+    from YutaRobot import EVENT_LOGS, LOGGER, dispatcher
+    from YutaRobot.modules.helper_funcs.chat_status import user_admin
+    from YutaRobot.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)
