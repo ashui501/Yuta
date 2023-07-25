@@ -486,8 +486,8 @@ def connection_status(func):
 
 
 # Workaround for circular import with connection.py
-from GabiBraunRobot.modules import connection
+from YutaRobot.modules import connection
 connected = connection.connected
 
-from GabiBraunRobot.modules.helper_funcs import anonymous
+from YutaRobot.modules.helper_funcs import anonymous
 anonymous_data = anonymous.anonymous_data
