@@ -1,8 +1,8 @@
 import os
 import cv2
 from PIL import Image
-from GabiBraunRobot.events import register as gabi
-from GabiBraunRobot import telethn as tbot
+from YutaRobot.events import register as gabi
+from YutaRobot import telethn as tbot
 
 
 @gabi(pattern="^/tiny ?(.*)")
