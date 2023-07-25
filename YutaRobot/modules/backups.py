@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler
 
-import GabiBraunRobot.modules.sql.notes_sql as sql
-from GabiBraunRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from GabiBraunRobot.__main__ import DATA_IMPORT
-from GabiBraunRobot.modules.helper_funcs.chat_status import user_admin
-from GabiBraunRobot.modules.helper_funcs.alternate import typing_action
+import YutaRobot.modules.sql.notes_sql as sql
+from YutaRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from YutaRobot.__main__ import DATA_IMPORT
+from YutaRobot.modules.helper_funcs.chat_status import user_admin
+from YutaRobot.modules.helper_funcs.alternate import typing_action
 
-# from GabiBraunRobot.modules.rules import get_rules
-import GabiBraunRobot.modules.sql.rules_sql as rulessql
+# from YutaRobot.modules.rules import get_rules
+import YutaRobot.modules.sql.rules_sql as rulessql
 
-# from GabiBraunRobot.modules.sql import warns_sql as warnssql
-import GabiBraunRobot.modules.sql.blacklist_sql as blacklistsql
-from GabiBraunRobot.modules.sql import disable_sql as disabledsql
+# from YutaRobot.modules.sql import warns_sql as warnssql
+import YutaRobot.modules.sql.blacklist_sql as blacklistsql
+from YutaRobot.modules.sql import disable_sql as disabledsql
 
-# from GabiBraunRobot.modules.sql import cust_filters_sql as filtersql
-# import GabiBraunRobot.modules.sql.welcome_sql as welcsql
-import GabiBraunRobot.modules.sql.locks_sql as locksql
-from GabiBraunRobot.modules.connection import connected
+# from YutaRobot.modules.sql import cust_filters_sql as filtersql
+# import YutaRobot.modules.sql.welcome_sql as welcsql
+import YutaRobot.modules.sql.locks_sql as locksql
+from YutaRobot.modules.connection import connected
 
 
 @user_admin
