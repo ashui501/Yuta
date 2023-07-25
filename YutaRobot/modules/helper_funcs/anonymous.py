@@ -29,5 +29,5 @@ def anonymous_admin_callback(update: Update, context: CallbackContext):
 
 dispatcher.add_handler(CallbackQueryHandler(anonymous_admin_callback, pattern="anonAdmin_"))
 
-from GabiBraunRobot.modules.helper_funcs import chat_status
+from YutaRobot.modules.helper_funcs import chat_status
 is_user_admin = chat_status.is_user_admin
