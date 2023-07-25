@@ -4,15 +4,15 @@ import nekos
 import requests
 from PIL import Image
 from telegram import ParseMode
-from GabiBraunRobot import dispatcher, updater
-import GabiBraunRobot.modules.sql.lewd_sql as sql
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
-from GabiBraunRobot.modules.log_channel import gloggable
+from YutaRobot import dispatcher, updater
+import YutaRobot.modules.sql.lewd_sql as sql
+from YutaRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot.modules.log_channel import gloggable
 from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CommandHandler, CallbackContext
-from GabiBraunRobot.modules.helper_funcs.filters import CustomFilters
-from GabiBraunRobot.modules.helper_funcs.chat_status import user_admin
+from YutaRobot.modules.helper_funcs.filters import CustomFilters
+from YutaRobot.modules.helper_funcs.chat_status import user_admin
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
 @user_admin
