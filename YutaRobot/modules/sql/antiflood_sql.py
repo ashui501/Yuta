@@ -1,7 +1,7 @@
 import threading
 
 from sqlalchemy import String, Column, Integer, UnicodeText
-from GabiBraunRobot.modules.sql import SESSION, BASE
+from YutaRobot.modules.sql import SESSION, BASE
 from sqlalchemy.sql.sqltypes import BigInteger
 
 DEF_COUNT = 1
