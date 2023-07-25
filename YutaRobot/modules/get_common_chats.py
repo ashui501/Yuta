@@ -1,9 +1,9 @@
 import os
 from time import sleep
 
-from GabiBraunRobot import OWNER_ID, dispatcher
-from GabiBraunRobot.modules.helper_funcs.extraction import extract_user
-from GabiBraunRobot.modules.sql.users_sql import get_user_com_chats
+from YutaRobot import OWNER_ID, dispatcher
+from YutaRobot.modules.helper_funcs.extraction import extract_user
+from YutaRobot.modules.sql.users_sql import get_user_com_chats
 from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters
