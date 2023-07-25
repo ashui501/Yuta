@@ -1,7 +1,7 @@
 import threading
 
-from GabiBraunRobot import dispatcher
-from GabiBraunRobot.modules.sql import BASE, SESSION
+from YutaRobot import dispatcher
+from YutaRobot.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,
