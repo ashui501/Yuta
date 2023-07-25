@@ -2,9 +2,9 @@ import sre_constants
 
 import regex
 import telegram
-from GabiBraunRobot import LOGGER, dispatcher
-from GabiBraunRobot.modules.disable import DisableAbleMessageHandler
-from GabiBraunRobot.modules.helper_funcs.regex_helper import infinite_loop_check
+from YutaRobot import LOGGER, dispatcher
+from YutaRobot.modules.disable import DisableAbleMessageHandler
+from YutaRobot.modules.helper_funcs.regex_helper import infinite_loop_check
 from telegram import Update
 from telegram.ext import CallbackContext, Filters
 
