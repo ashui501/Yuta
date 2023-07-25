@@ -1,20 +1,20 @@
 import html
 from typing import Optional
 
-from GabiBraunRobot import LOGGER, TIGERS, dispatcher
-from GabiBraunRobot.modules.helper_funcs.chat_status import (
+from YutaRobot import LOGGER, TIGERS, dispatcher
+from YutaRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
     is_user_admin,
     user_admin,
 )
-from GabiBraunRobot.modules.helper_funcs.extraction import (
+from YutaRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from GabiBraunRobot.modules.helper_funcs.string_handling import extract_time
-from GabiBraunRobot.modules.log_channel import loggable
+from YutaRobot.modules.helper_funcs.string_handling import extract_time
+from YutaRobot.modules.log_channel import loggable
 from telegram import Bot, Chat, ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler
