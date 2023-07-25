@@ -2,8 +2,8 @@ import datetime
 from typing import List
 
 import requests
-from GabiBraunRobot import TIME_API_KEY, dispatcher
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot import TIME_API_KEY, dispatcher
+from YutaRobot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext
 
