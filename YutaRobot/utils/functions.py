@@ -1,6 +1,6 @@
 import aiofiles
 from pyrogram.types import Message
-from GabiBraunRobot import aiohttpsession as aiosession
+from YutaRobot import aiohttpsession as aiosession
 
 
 async def get_user_id_and_usernames(client) -> dict:
