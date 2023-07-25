@@ -1,7 +1,7 @@
 import threading
 from typing import Union
 
-from GabiBraunRobot.modules.sql import BASE, SESSION
+from YutaRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String
 from sqlalchemy.sql.sqltypes import BigInteger
 
