@@ -1,9 +1,9 @@
 from typing import Optional
 
-import GabiBraunRobot.modules.sql.rules_sql as sql
-from GabiBraunRobot import dispatcher
-from GabiBraunRobot.modules.helper_funcs.chat_status import user_admin
-from GabiBraunRobot.modules.helper_funcs.string_handling import markdown_parser
+import YutaRobot.modules.sql.rules_sql as sql
+from YutaRobot import dispatcher
+from YutaRobot.modules.helper_funcs.chat_status import user_admin
+from YutaRobot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
