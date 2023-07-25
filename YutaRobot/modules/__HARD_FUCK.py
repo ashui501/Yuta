@@ -1,6 +1,6 @@
 import nekos
 import requests
-from GabiBraunRobot import dispatcher
+from YutaRobot import dispatcher
 from telegram.ext import CommandHandler
 
 url_sfw = "https://api.waifu.pics/sfw/" 
