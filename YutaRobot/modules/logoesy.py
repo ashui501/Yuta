@@ -6,8 +6,8 @@ import random
 import requests
 from PIL import Image, ImageDraw, ImageFont
 
-from GabiBraunRobot import OWNER_ID, telethn as tbot
-from GabiBraunRobot.events import register
+from YutaRobot import OWNER_ID, telethn as tbot
+from YutaRobot.events import register
 
 LOGO_LINKS = [
     "https://telegra.ph/file/98bf31ab534bbaf75267a.jpg",
