@@ -5,15 +5,15 @@ import re
 from sys import argv
 from typing import Optional
 
-from GabiBraunRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
+from YutaRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, BOT_NAME, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
                           dispatcher, StartTime, telethn, updater, pbot)
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from GabiBraunRobot.modules import ALL_MODULES
-from GabiBraunRobot.modules.helper_funcs.chat_status import is_user_admin
-from GabiBraunRobot.modules.helper_funcs.misc import paginate_modules
-import GabiBraunRobot.modules.sql.users_sql as sql
+from YutaRobot.modules import ALL_MODULES
+from YutaRobot.modules.helper_funcs.chat_status import is_user_admin
+from YutaRobot.modules.helper_funcs.misc import paginate_modules
+import YutaRobot.modules.sql.users_sql as sql
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.error import (BadRequest, ChatMigrated, NetworkError,
@@ -54,7 +54,6 @@ def get_readable_time(seconds: int) -> str:
 START_TEX = """𝙃𝙚𝙡𝙡𝙤 {}, 𝙬𝙖𝙞𝙩 𝙖 𝙢𝙞𝙣 𝙗𝙧𝙤..."""
 
 PM_START_TEXT = """
-──────「[Hey](https://telegra.ph/file/c6152edc01dde6a7c6813.jpg)」────
 ➽ Konnichiwa dear 
 ─★──★───★───★───★────★─
 I am an Anime themed group 
@@ -118,7 +117,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("GabiBraunRobot.modules." + module_name)
+    imported_module = importlib.import_module("YutaRobot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -240,7 +239,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Support",
-                            url=f"https://t.me/samurai_botSupport",
+                            url=f"https://t.me/gojo_support_chat",
                         ),
                     ]
                 ]
@@ -370,9 +369,9 @@ def help_button(update, context):
         pass
 
 
-def gabi_about_callback(update, context):
+def yuta_about_callback(update, context):
     query = update.callback_query
-    if query.data == "_gabi":
+    if query.data == "_yuta":
         query.message.edit_text(
             text=""" ℹ️ I'm *MAKISE*, a powerful group management bot built to help you manage your group easily.\n❍ I can restrict users.\n❍ I can greet users with customizable welcome messages and even set a group's rules.\n❍ I have an advanced anti-flood system.\n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.\n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.\n❍ I check for admins' permissions before executing any command and more stuffs\n❍ Makise licensed under the GNU3 General Public License v3.0!
 \n*×Below you will find the link of the support group and channel.×*
@@ -416,8 +415,8 @@ It would be great if you would help us!""",
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="https://t.me/Samurai_Botsupport"),                               
-                    InlineKeyboardButton(text="NETWORK", url="https://t.me/teamSAMURAII"),                            
+                    InlineKeyboardButton(text="Support", url="https://t.me/gojo_support_chat"),                               
+                    InlineKeyboardButton(text="NETWORK", url="https://t.me/auefgerfubefyuefh"),                            
                  ],
                  [
                     InlineKeyboardButton(text="🔙Back", callback_data="donate_back")
@@ -725,7 +724,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings, run_async=True)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_", run_async=True)
 
-    gabi_callback_handler = CallbackQueryHandler(gabi_about_callback, pattern=r"_gabi", run_async=True)
+    gabi_callback_handler = CallbackQueryHandler(yuta_about_callback, pattern=r"_yuta", run_async=True)
     donate_callback_handler = CallbackQueryHandler(donate_callback, pattern=r"donate_", run_async=True)
 
     donate_handler = CommandHandler("donate", donate, run_async=True)
@@ -734,7 +733,7 @@ def main():
     # dispatcher.add_handler(test_handler)
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
-    dispatcher.add_handler(gabi_callback_handler)
+    dispatcher.add_handler(yuta_callback_handler)
     dispatcher.add_handler(donate_callback_handler)
     dispatcher.add_handler(settings_handler)
     dispatcher.add_handler(help_callback_handler)
