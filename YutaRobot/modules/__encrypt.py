@@ -1,6 +1,6 @@
-from GabiBraunRobot import telethn as tbot
+from YutaRobot import telethn as tbot
 import os
-from GabiBraunRobot.events import register
+from YutaRobot.events import register
 import secureme
 
 @register(pattern="^/encrypt ?(.*)")
