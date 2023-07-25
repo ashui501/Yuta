@@ -376,8 +376,8 @@ def yuta_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍 ∘", url="https://t.me/samurai_botSupport"),                               
-                    InlineKeyboardButton(text="𝖴𝗉𝖽𝖺𝗍𝖾𝗌 ∘", url="t.me/Serenity_Log"),                            
+                    InlineKeyboardButton(text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍 ∘", url="https://t.me/The_Apexx"),                               
+                    InlineKeyboardButton(text="𝖴𝗉𝖽𝖺𝗍𝖾𝗌 ∘", url="t.me/daxai_updates"),                            
                  ],
                  [
                     InlineKeyboardButton(text="🏠", callback_data="donate_back")
