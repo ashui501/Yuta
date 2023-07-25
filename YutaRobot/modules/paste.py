@@ -8,9 +8,9 @@ import aiofiles
 from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton
-from GabiBraunRobot import aiohttpsession as session
-from GabiBraunRobot.utils.paste import paste
-from GabiBraunRobot import pbot as app
+from YutaRobot import aiohttpsession as session
+from YutaRobot.utils.paste import paste
+from YutaRobot import pbot as app
 
 pattern = re.compile(
     r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$"
