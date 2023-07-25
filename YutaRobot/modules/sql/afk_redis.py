@@ -1,4 +1,4 @@
-from GabiBraunRobot import REDIS
+from YutaRobot import REDIS
 
 # AFK
 def is_user_afk(userid):
