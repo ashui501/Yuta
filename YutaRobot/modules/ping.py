@@ -5,14 +5,14 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext
 
-from GabiBraunRobot import StartTime, dispatcher
-from GabiBraunRobot.modules.helper_funcs.chat_status import sudo_plus
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot import StartTime, dispatcher
+from YutaRobot.modules.helper_funcs.chat_status import sudo_plus
+from YutaRobot.modules.disable import DisableAbleCommandHandler
 
 sites_list = {
     "Telegram": "https://api.telegram.org",
-    "Support": "https://t.me/gabihelpsupport",
-    "Channel": "https://t.me/EldianGabi_UpdateChannel",
+    "Support": "https://t.me/yutahelpsupport",
+    "Channel": "https://t.me/cnrefhruyf",
     "Jikan": "https://api.jikan.moe/v3",
 }
 
