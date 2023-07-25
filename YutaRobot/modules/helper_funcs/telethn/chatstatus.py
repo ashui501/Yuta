@@ -1,5 +1,5 @@
-from GabiBraunRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from GabiBraunRobot import DRAGONS
+from YutaRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from YutaRobot import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
