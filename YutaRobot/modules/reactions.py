@@ -1,7 +1,7 @@
 import random
 
-from GabiBraunRobot import dispatcher
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot import dispatcher
+from YutaRobot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext
 
