@@ -3,25 +3,25 @@ import re
 from typing import Optional
 
 import telegram
-from GabiBraunRobot import TIGERS, WOLVES, dispatcher
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
-from GabiBraunRobot.modules.helper_funcs.chat_status import (
+from YutaRobot import TIGERS, WOLVES, dispatcher
+from YutaRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from GabiBraunRobot.modules.helper_funcs.extraction import (
+from YutaRobot.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from GabiBraunRobot.modules.helper_funcs.filters import CustomFilters
-from GabiBraunRobot.modules.helper_funcs.misc import split_message
-from GabiBraunRobot.modules.helper_funcs.string_handling import split_quotes
-from GabiBraunRobot.modules.log_channel import loggable
-from GabiBraunRobot.modules.sql import warns_sql as sql
+from YutaRobot.modules.helper_funcs.filters import CustomFilters
+from YutaRobot.modules.helper_funcs.misc import split_message
+from YutaRobot.modules.helper_funcs.string_handling import split_quotes
+from YutaRobot.modules.log_channel import loggable
+from YutaRobot.modules.sql import warns_sql as sql
 from telegram import (
     CallbackQuery,
     Chat,
@@ -43,7 +43,7 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html
-from GabiBraunRobot.modules.sql.approve_sql import is_approved
+from YutaRobot.modules.sql.approve_sql import is_approved
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"
