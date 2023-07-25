@@ -1,4 +1,4 @@
-from GabiBraunRobot import dispatcher
+from YutaRobot import dispatcher
 from telegram import Update
 from telegram.ext import CallbackContext, CallbackQueryHandler
 
