@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, Integer
 
-from GabiBraunRobot.modules.sql import BASE, SESSION
+from YutaRobot.modules.sql import BASE, SESSION
 
 from sqlalchemy.sql.sqltypes import BigInteger
 
