@@ -6,8 +6,8 @@
 import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
-from GabiBraunRobot import telethn 
-from GabiBraunRobot.events import register as gabi 
+from YutaRobot import telethn 
+from YutaRobot.events import register as gabi 
 
 
 
