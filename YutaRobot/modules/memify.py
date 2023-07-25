@@ -1,8 +1,8 @@
 import textwrap
 import os
 from PIL import Image, ImageFont, ImageDraw
-from GabiBraunRobot.events import register as gabi
-from GabiBraunRobot import LOGGER, TEMP_DOWNLOAD_DIRECTORY, telethn as bot
+from YutaRobot.events import register as gabi
+from YutaRobot import LOGGER, TEMP_DOWNLOAD_DIRECTORY, telethn as bot
 
 
 @gabi(pattern="^/mmf ?(.*)")
