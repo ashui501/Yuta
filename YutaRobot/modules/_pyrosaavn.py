@@ -7,8 +7,8 @@ import requests
 import wget
 from pyrogram import filters
 
-from GabiBraunRobot import pbot as gabi 
-from GabiBraunRobot.pyrogramee.dark import get_arg
+from YutaRobot import pbot as gabi 
+from YutaRobot.pyrogramee.dark import get_arg
 
 
 @gabi.on_message(filters.command("saavn"))
