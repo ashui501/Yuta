@@ -1,7 +1,7 @@
 import speedtest
-from GabiBraunRobot import DEV_USERS, dispatcher
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
-from GabiBraunRobot.modules.helper_funcs.chat_status import dev_plus
+from YutaRobot import DEV_USERS, dispatcher
+from YutaRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler
 
