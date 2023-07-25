@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import GabiBraunRobot.modules.sql.blsticker_sql as sql
-from GabiBraunRobot import LOGGER, dispatcher
-from GabiBraunRobot.modules.connection import connected
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
-from GabiBraunRobot.modules.helper_funcs.alternate import send_message
-from GabiBraunRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from GabiBraunRobot.modules.helper_funcs.misc import split_message
-from GabiBraunRobot.modules.helper_funcs.string_handling import extract_time
+import YutaRobot.modules.sql.blsticker_sql as sql
+from YutaRobot import LOGGER, dispatcher
+from YutaRobot.modules.connection import connected
+from YutaRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot.modules.helper_funcs.alternate import send_message
+from YutaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from YutaRobot.modules.helper_funcs.misc import split_message
+from YutaRobot.modules.helper_funcs.string_handling import extract_time
 
-from GabiBraunRobot.modules.log_channel import loggable
-from GabiBraunRobot.modules.warns import warn
+from YutaRobot.modules.log_channel import loggable
+from YutaRobot.modules.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
