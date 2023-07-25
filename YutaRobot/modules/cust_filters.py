@@ -13,23 +13,23 @@ from telegram.ext import (
     Filters,
 )
 from telegram.utils.helpers import mention_html, escape_markdown
-from GabiBraunRobot import dispatcher, LOGGER, DRAGONS
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
-from GabiBraunRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from GabiBraunRobot.modules.helper_funcs.chat_status import user_admin
-from GabiBraunRobot.modules.helper_funcs.extraction import extract_text
-from GabiBraunRobot.modules.helper_funcs.filters import CustomFilters
-from GabiBraunRobot.modules.helper_funcs.misc import build_keyboard_parser
-from GabiBraunRobot.modules.helper_funcs.msg_types import get_filter_type
-from GabiBraunRobot.modules.helper_funcs.string_handling import (
+from YutaRobot import dispatcher, LOGGER, DRAGONS
+from YutaRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from YutaRobot.modules.helper_funcs.chat_status import user_admin
+from YutaRobot.modules.helper_funcs.extraction import extract_text
+from YutaRobot.modules.helper_funcs.filters import CustomFilters
+from YutaRobot.modules.helper_funcs.misc import build_keyboard_parser
+from YutaRobot.modules.helper_funcs.msg_types import get_filter_type
+from YutaRobot.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from GabiBraunRobot.modules.sql import cust_filters_sql as sql
-from GabiBraunRobot.modules.connection import connected
-from GabiBraunRobot.modules.helper_funcs.alternate import send_message, typing_action
+from YutaRobot.modules.sql import cust_filters_sql as sql
+from YutaRobot.modules.connection import connected
+from YutaRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 
