@@ -22,10 +22,10 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.utils.helpers import mention_html, escape_markdown
-from GabiBraunRobot.modules.helper_funcs.string_handling import extract_time
-from GabiBraunRobot.modules.connection import connected
-from GabiBraunRobot.modules.helper_funcs.alternate import send_message
-from GabiBraunRobot.modules.sql.approve_sql import is_approved
+from YutaRobot.modules.helper_funcs.string_handling import extract_time
+from YutaRobot.modules.connection import connected
+from YutaRobot.modules.helper_funcs.alternate import send_message
+from YutaRobot.modules.sql.approve_sql import is_approved
 
 FLOOD_GROUP = 3
 
