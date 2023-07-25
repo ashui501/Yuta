@@ -1,5 +1,5 @@
 {
-      "name": "Gabi Braun Robot",
+      "name": "Yuta Robot",
       "description": "An Anime themed Telegram group management bot.",
       "keywords": [
          "telegram",
@@ -9,7 +9,7 @@
          "Gabi"
       ],   
   "logo":    "https://telegra.ph/file/a612794ea868bb4fbcc5e.jpg",
- "repository": "https://github.com/HuntingBots/GabiBraunRobot",
+ "repository": "https://github.com/Anonymous-068/YutaRobot",
    "addons": [
       {
          "options": {
