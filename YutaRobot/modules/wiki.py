@@ -1,6 +1,6 @@
 import wikipedia
-from GabiBraunRobot import dispatcher
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot import dispatcher
+from YutaRobot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext
 from wikipedia.exceptions import DisambiguationError, PageError
