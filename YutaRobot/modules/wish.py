@@ -1,6 +1,6 @@
 import random
 from PIL import Image
-from GabiBraunRobot import telethn as neko
+from YutaRobot import telethn as neko
 from telethon import events
 @neko.on(events.NewMessage(pattern="/wish ?(.*)"))
 async def wish(e):
