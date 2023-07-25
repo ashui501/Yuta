@@ -1,8 +1,8 @@
 import importlib
 import collections
 
-from GabiBraunRobot import dispatcher, telethn
-from GabiBraunRobot.__main__ import (
+from YutaRobot import dispatcher, telethn
+from YutaRobot.__main__ import (
     CHAT_SETTINGS,
     DATA_EXPORT,
     DATA_IMPORT,
@@ -13,7 +13,7 @@ from GabiBraunRobot.__main__ import (
     USER_INFO,
     USER_SETTINGS,
 )
-from GabiBraunRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from YutaRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 
