@@ -18,11 +18,11 @@ from telegram import (
 from telegram.ext import CallbackContext, CallbackQueryHandler
 from telegram.utils.helpers import mention_html
 
-from GabiBraunRobot import convert_gif
-from GabiBraunRobot import dispatcher
-from GabiBraunRobot import telethn as bot
-from GabiBraunRobot.events import register as asau
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot import convert_gif
+from YutaRobot import dispatcher
+from YutaRobot import telethn as bot
+from YutaRobot.events import register as asau
+from YutaRobot.modules.disable import DisableAbleCommandHandler
 
 combot_stickers_url = "https://combot.org/telegram/stickers?q="
 
