@@ -1,6 +1,6 @@
 import sys
 from envparse import env
-from GabiBraunRobot import LOGGER
+from YutaRobot import LOGGER
 
 DEFAULTS = {
     "LOAD_MODULES": True,
