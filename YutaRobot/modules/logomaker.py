@@ -2,8 +2,8 @@ import os
 
 from PIL import Image, ImageDraw, ImageFont
 
-from GabiBraunRobot.events import register
-from GabiBraunRobot import OWNER_ID, telethn as tbot
+from YutaRobot.events import register
+from YutaRobot import OWNER_ID, telethn as tbot
 
 
 @register(pattern="^/nlogo ?(.*)")
