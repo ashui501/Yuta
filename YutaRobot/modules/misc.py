@@ -1,6 +1,6 @@
-from GabiBraunRobot.modules.helper_funcs.chat_status import user_admin
-from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
-from GabiBraunRobot import dispatcher
+from YutaRobot.modules.helper_funcs.chat_status import user_admin
+from YutaRobot.modules.disable import DisableAbleCommandHandler
+from YutaRobot import dispatcher
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import ParseMode, Update
