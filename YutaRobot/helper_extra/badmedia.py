@@ -1,4 +1,4 @@
-from GabiBraunRobot import telethn as tbot
+from YutaRobot import telethn as tbot
 import requests
 import time
 
