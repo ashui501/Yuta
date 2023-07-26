@@ -1,4 +1,4 @@
-from DazaiRobot.utils.mongo import db
+from YutaRobot.utils.mongo import db
 
 matadb = db.sangmata
 history_db = db.name_history
