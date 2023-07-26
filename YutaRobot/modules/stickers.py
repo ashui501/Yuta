@@ -24,9 +24,9 @@ from telegram import (
 from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler
 from telegram.utils.helpers import mention_html
 
-from DazaiRobot import dispatcher
-from DazaiRobot import telethn as bot
-from DazaiRobot.events import register as asux
+from YutaRobot import dispatcher
+from YutaRobot import telethn as bot
+from YutaRobot.events import register as asux
 
 combot_stickers_url = "https://combot.org/telegram/stickers?q="
 
