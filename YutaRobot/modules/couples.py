@@ -1,9 +1,9 @@
 import random
 from datetime import datetime
-from DazaiRobot import pbot as pgram
-from DazaiRobot import DRAGONS as SUPREME_USERS
+from YutaRobot import pbot as pgram
+from YutaRobot import DRAGONS as SUPREME_USERS
 from pyrogram import filters
-from DazaiRobot.modules.mongo.couples_db import get_couple,save_couple,del_couple
+from YutaRobot.modules.mongo.couples_db import get_couple,save_couple,del_couple
 
 def dt():
     now = datetime.now()
