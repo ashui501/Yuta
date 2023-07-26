@@ -1,4 +1,4 @@
-from DazaiRobot.utils.mongo import db
+from YutaRobot.utils.mongo import db
 
 coupledb = db.couple
 
