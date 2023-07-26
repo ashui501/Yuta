@@ -1,5 +1,5 @@
 asyncio==3.4.3
-aiofiles==3.8.4
+aiofiles==23.1.0
 apscheduler==3.6.3
 aiohttp==3.8.4
 alphabet-detector==0.0.7
