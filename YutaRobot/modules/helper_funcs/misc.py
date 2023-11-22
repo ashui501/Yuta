@@ -16,7 +16,7 @@ class EqInlineKeyboardButton(InlineKeyboardButton):
     def __gt__(self, other):
         return self.text > other.text
 
-
+donate_back
 def split_message(msg: str) -> List[str]:
     if len(msg) < MAX_MESSAGE_LENGTH:
         return [msg]
